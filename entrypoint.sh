@@ -14,6 +14,11 @@ else
   DOCKER_USERNAME=$2
   DOCKER_PASSWORD=$3
   DOCKER_REGISTRY=$4
+  
+  echo $DOCKER_USERNAME
+  echo $DOCKER_PASSWORD
+  echo $DOCKER_REGISTRY
+  
   echo "Running docker login"
   [ -z "$DOCKER_REGISTRY" ] || echo "Using custom registry: ${DOCKER_REGISTRY}"
   echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin ${DOCKER_REGISTRY}
