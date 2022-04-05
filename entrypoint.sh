@@ -15,8 +15,11 @@ else
   DOCKER_PASSWORD=$3
   DOCKER_REGISTRY=$4
   
+  echo "This is DOCKER_USERNAME"
   echo $DOCKER_USERNAME
+  echo "This is DOCKER_PASSWORD"
   echo $DOCKER_PASSWORD
+  echo "This is DOCKER_REGISTRY"
   echo $DOCKER_REGISTRY
   
   echo "Running docker login"
